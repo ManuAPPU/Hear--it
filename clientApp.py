@@ -18,22 +18,22 @@ def home():
 @app.route("/towav", methods=['GET'])
 @cross_origin()
 def wav():
-    return render_template('to_wav.html')
+    return render_template('templates/to_wav.html')
 
 @app.route("/shopping", methods=['GET'])
 @cross_origin()
 def shop():
-    return render_template('shopping.html')
+    return render_template('templates/shopping.html')
 
 @app.route("/donate", methods=['GET'])
 @cross_origin()
 def donate():
-    return render_template('donate.html')
+    return render_template('templates/donate.html')
 
 @app.route("/payment", methods=['GET'])
 @cross_origin()
 def payment():
-    return render_template('payment.html')
+    return render_template('templates/payment.html')
 
 
 @app.route("/predict", methods=['POST'])
